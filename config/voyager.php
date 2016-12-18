@@ -52,7 +52,7 @@ return [
     */
 
     'storage' => [
-        'subfolder' => 'public/', // include trailing slash, like 'my_folder/'
+        'subfolder' => '', // include trailing slash, like 'my_folder/'
     ],
 
     /*
