@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostsController@index');
 
-
-Route::group(['prefix' => 'admin'], function () {
+Route::group([ 'prefix' => 'admin' ], function () {
     Voyager::routes();
 });

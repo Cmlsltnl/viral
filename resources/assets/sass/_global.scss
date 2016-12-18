@@ -1,0 +1,18 @@
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+a {
+  outline: 0;
+  color: #151515;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: $viral-brand;
+    text-decoration: none;
+  }
+}

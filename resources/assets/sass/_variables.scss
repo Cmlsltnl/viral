@@ -1,3 +1,7 @@
+// Viral Branding Vars
+$viral-brand: #ce1126;
+$font-hind: 'Hind', sans-serif;
+$font-rat: 'Montserrat', sans-serif;
 
 // Body
 $body-bg: #f5f8fa;
@@ -10,7 +14,7 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: #3097D1;
+$brand-primary: $viral-brand;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
@@ -23,7 +27,8 @@ $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-inverse-bg: #000;
+$navbar-height: 60px;
 
 // Buttons
 $btn-default-color: $text-color;

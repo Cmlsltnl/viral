@@ -1,0 +1,78 @@
+.navbar-inverse {
+  border: 0px solid transparent;
+
+  .navbar-brand {
+    font-family: $font-rat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: none;
+
+    padding: 15px 25px 15px 15px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+
+    color: #fff;
+
+    .logo-point {
+      color: $viral-brand;
+    }
+  }
+
+  .navbar-nav > li > a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      color: $viral-brand;
+      text-decoration: none;
+    }
+  }
+
+  .nav-categories {
+
+    .dropdown {
+
+      .dropdown-toggle {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          color: #fff;
+        }
+      }
+
+      .dropdown-menu {
+        > li > a {
+          padding: 5px 25px 3px;
+          -webkit-transition: all ease 0.1s;
+          -moz-transition: all ease 0.1s;
+          transition: all ease 0.1s;
+
+          &:hover,
+          &:focus {
+            background-color: transparent;
+          }
+        }
+      }
+
+      &:hover,
+      &:focus {
+        .dropdown-menu {
+          display: block;
+          margin-top: 0; // remove the gap so it doesn't close
+        }
+      }
+    }
+  }
+}
+
