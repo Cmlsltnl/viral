@@ -7813,4 +7813,13 @@ a:hover, a:focus {
   -webkit-transition: width 0.15s ease;
 }
 
+.navbar-inverse {
+  -webkit-transition: top 0.1s ease-in-out;
+  transition: top 0.1s ease-in-out;
+}
+
+.navbar-inverse.nav-up {
+  top: -60px;
+}
+
 /*# sourceMappingURL=app.css.map */
