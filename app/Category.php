@@ -2,9 +2,9 @@
 
 namespace App;
 
-use TCG\Voyager\Models\User as VoyagerUser;
+use TCG\Voyager\Models\Category as VoyagerCategory;
 
-class User extends VoyagerUser
+class Category extends VoyagerCategory
 {
 
     public function posts()
