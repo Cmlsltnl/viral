@@ -15,7 +15,8 @@
 
 @include('partials._head_social')
 
-<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Hind:300,400,500,600,700|Montserrat:400,700"
+      rel="stylesheet">
 
 <script src="https://use.fontawesome.com/dc46af29d6.js"></script>
 

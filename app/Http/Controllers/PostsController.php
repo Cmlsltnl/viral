@@ -12,9 +12,10 @@ class PostsController extends Controller
     //
     public function index()
     {
-        $posts = Post::where('status', '=', 'PUBLISHED')->orderBy('created_at', 'desc')->paginate(1);
+        $featWhere = [ 'status' => 'PUBLISHED', 'featured' => true ];
+        $featuredPosts = Post::where($featWhere)->orderBy('created_at', 'desc')->paginate(6);
 
-        return view('posts.index')->with('posts', $posts);
+        return view('posts.index')->with('featuredPosts', $featuredPosts);
     }
 
 }
