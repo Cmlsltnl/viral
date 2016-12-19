@@ -17,3 +17,27 @@ a {
     text-decoration: none;
   }
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .container {
+    width: 1220px;
+  }
+}
+
+@media (min-width: 1420px) {
+  .container {
+    width: 1420px;
+  }
+}
