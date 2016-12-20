@@ -14,8 +14,8 @@ class PostsController extends Controller
     //
     public function index()
     {
-        $featWhere = [ 'status' => 'PUBLISHED', 'featured' => true ];
-        $featuredPosts = Post::where($featWhere)->orderBy('created_at', 'desc')->take(6)->get();
+        $featuredPosts = Post::where([ 'status' => 'PUBLISHED', 'featured' => true ])->orderBy('created_at',
+            'desc')->take(6)->get();
 
         return view('posts.index')->with('featuredPosts', $featuredPosts);
     }
@@ -23,8 +23,7 @@ class PostsController extends Controller
 
     public function single($slug)
     {
-        $postWhere = [ 'status' => 'PUBLISHED', 'slug' => $slug ];
-        $post = Post::where($postWhere)->firstOrFail();
+        $post = Post::where([ 'status' => 'PUBLISHED', 'slug' => $slug ])->firstOrFail();
 
         // Check if post is published or throw error
 
