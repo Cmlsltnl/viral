@@ -8,9 +8,6 @@
     -webkit-transition: opacity 0.15s ease-in;
     transition: opacity 0.15s ease-in;
   }
-
-  article {
-  }
 }
 
 .column-posts-featured {
@@ -98,6 +95,9 @@
 
     .entry-meta {
       color: rgba(255, 255, 255, .75);
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: none;
       span {
         margin-right: 15px;
       }

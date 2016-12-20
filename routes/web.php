@@ -16,3 +16,5 @@ Route::get('/', 'PostsController@index');
 Route::group([ 'prefix' => 'admin' ], function () {
     Voyager::routes();
 });
+
+Route::get('/{slug}', [ 'uses' => 'PostsController@single', 'as' => 'posts.single' ])->where('slug', '[\w\d\-\_]+');
