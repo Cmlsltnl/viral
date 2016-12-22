@@ -36,4 +36,10 @@ class Post extends VoyagerPost
     {
         return $this->belongsTo('App\Category');
     }
+
+
+    public function scopePublished($query)
+    {
+        return $query->where('status', 'published');
+    }
 }
